@@ -4,12 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>caluclation-table</title>
+    <style>
+        .memberslist-table {
+            width: 100%;
+            border: 1px solid #cccccc;
+            text-transform: capitalize;
+            background-color: #7952B3;
+            text-align: center;
+            border-collapse: collapse;
+
+        }
+
+        .memberslist-table,
+        th,
+        td {
+            border: 1px solid #cccccc;
+        }
+
+        .th,
+        td {
+            background-color: whitesmoke;
+            font-size: x-small;
+            font-family: sans-serif;
+        }
+
+        #option {
+            width: 200px;
+            border-radius: 3px;
+        }
+
+        .form-control {
+            border-radius: 3px;
+            float: right;
+        }
+    </style>
+    <select id="option">
+        <option>sriram</option>
+        <option>prudhvi</option>
+        <option>lakshman</option>
+        <option>khaja</option>
+        <option>harish</option>
+    </select>
+    <div class="row">
+     <div class="col-mid">    
+        <input type="text" id="search-box" placeholder="text here" class="form-control" />
+    </div>
+
 </head>
 
 <body>
+    <table class="memberslist-table">
 
+        <thead>
+            <tr>
+                <th>UserId</th>
+                <th>id</th>
+                <th>Title</th>
+                <th>Completed</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+
+        </tbody>
+    </table>
 </body>
-<script src="loop method.js"></script>
 
 </html>
+<script src="feachpractice.js"></script>
